@@ -118,6 +118,7 @@ The config file is located at `config/data_agent-common.toml` (or configurable v
 - `POST /api/v1/reload`：异步触发游戏内资源重载（等同于执行 `/reload`）。
 - `GET /api/v1/registry/<type>`：查询注册表数据（支持 `item`, `block`, `fluid`, `entity_type`, `enchantment`, `biome`, `dimension`）。
 - `GET /api/v1/recipes`：查询已加载的合成配方，支持输入/输出筛选。
+- `GET /api/v1/player`：查询指定玩家（或首个在线玩家）的所处结构、坐标、当前维度、背包及末影箱数据。
 - 更多详细 API 说明请参考：[API Specification (中文)](docs/08_api_specification.md)。
 
 ### English
@@ -126,6 +127,7 @@ The base URL is `http://localhost:24482` by default.
 - `POST /api/v1/reload`: Asynchronously trigger in-game reload (same as `/reload`).
 - `GET /api/v1/registry/<type>`: Query registries (supports `item`, `block`, `fluid`, `entity_type`, `enchantment`, `biome`, `dimension`).
 - `GET /api/v1/recipes`: Query active crafting recipes with input/output filters.
+- `GET /api/v1/player`: Query structure, coordinates, dimension, inventory, and ender chest data for a specified player (or the first online player).
 - For complete details, see [API Specification (中文)](docs/08_api_specification.md).
 
 ---

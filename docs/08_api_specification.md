@@ -500,3 +500,53 @@ data: {"player":"Mrshellad","uuid":"dd12be42-52a9-4a91-a8a1-11c01849e498"}
 }
 ```
 
+---
+
+### 2.14. 查询玩家状态及背包数据 (`/api/v1/player`)
+* **方法**: `GET`
+* **说明**: 查询指定玩家（在测试环境下若未指定玩家，默认取当前在线的第一位玩家）所处的游戏结构（如村庄、要塞等）、当前世界坐标、所处维度、角色背包物品和末影箱数据。
+* **参数**:
+  * `name` (String, 可选): 指定查询的玩家游戏角色名。
+* **响应示例**: `GET /api/v1/player`
+```json
+{
+  "username": "PlayerName",
+  "uuid": "43e25b16-538a-4932-a589-cf913506c9a7",
+  "dimension": "minecraft:overworld",
+  "position": {
+    "x": -12.5,
+    "y": 64.0,
+    "z": 256.3
+  },
+  "structures": [
+    "minecraft:village_plains"
+  ],
+  "inventory": [
+    {
+      "slot": 0,
+      "id": "minecraft:iron_sword",
+      "count": 1,
+      "detail": {
+        "id": "minecraft:iron_sword",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      }
+    }
+  ],
+  "ender_chest": [
+    {
+      "slot": 0,
+      "id": "minecraft:diamond",
+      "count": 64,
+      "detail": {
+        "id": "minecraft:diamond",
+        "count": 64
+      }
+    }
+  ]
+}
+```
+
+

@@ -78,6 +78,7 @@ public class HttpServerManager {
             server.createContext("/api/v1/command", new CommandHandler());
             server.createContext("/api/v1/files", new FilesHandler());
             server.createContext("/api/v1/logs", new LogsHandler());
+            server.createContext("/api/v1/player", new PlayerHandler());
 
             server.start();
             isRunning = true;
