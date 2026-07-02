@@ -1,0 +1,13 @@
+{
+  "itemGroup.data_agent": "Example Mod Tab",
+  "block.data_agent.example_block": "Example Block",
+  "item.data_agent.example_item": "Example Item",
+
+  "data_agent.configuration.title": "Data Agent Settings",
+  "data_agent.configuration.section.data_agent.common.toml": "General Settings",
+  "data_agent.configuration.section.data_agent.common.toml.title": "General Settings",
+  "data_agent.configuration.apiPort": "API Port",
+  "data_agent.configuration.apiPort.tooltip": "The port number the API server binds to (1024 - 65535).",
+  "data_agent.configuration.enableApi": "Enable API Server",
+  "data_agent.configuration.enableApi.tooltip": "Toggles the HTTP API server. If disabled, the API server will shut down."
+}
