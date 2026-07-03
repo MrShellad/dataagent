@@ -1,6 +1,6 @@
 # Data Agent (Pi Agent Mod)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
 [![NeoForge](https://img.shields.io/badge/NeoForge-26.2-blue)](https://neoforged.net/)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.4-red)](https://minecraft.net/)
 
@@ -147,6 +147,6 @@ The base URL is `http://localhost:24482` by default.
 
 ## ⚖️ 开源协议 / License
 
-本项目采用 [MIT License](LICENSE) 授权。
+本项目采用 [AGPL v3.0 License](LICENSE) 授权。
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [AGPL v3.0 License](LICENSE).
