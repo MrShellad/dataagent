@@ -79,6 +79,9 @@ public class HttpServerManager {
             server.createContext("/api/v1/files", new FilesHandler());
             server.createContext("/api/v1/logs", new LogsHandler());
             server.createContext("/api/v1/player", new PlayerHandler());
+            McpHandler mcpHandler = new McpHandler();
+            server.createContext("/mcp", mcpHandler);
+            server.createContext("/api/v1/mcp", mcpHandler);
 
             server.start();
             isRunning = true;

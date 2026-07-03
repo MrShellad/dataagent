@@ -108,6 +108,8 @@ public class DataAgent {
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
+        LOGGER.info("Verifying/Extracting Pi Agent MCP Bridge files...");
+        com.mrshellad.dataagent.core.McpExtractor.extract();
         LOGGER.info("Starting Pi Agent HTTP server...");
         HttpServerManager.start();
     }

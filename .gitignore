@@ -38,3 +38,14 @@ run/
 **/src/generated/**/.cache/
 repo/
 !**/src/**/repo/
+
+### Node.js ###
+node_modules/
+.pi-agent/node_modules/
+npm-debug.log*
+
+### Local Databases & Dumps ###
+*.db
+minecraft_data.db
+.pi-agent/dumps/
+test_dumps/
